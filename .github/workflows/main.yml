@@ -25,8 +25,8 @@ jobs:
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
-        aws-access-key-id: FQ+cfRukwcSWnCVzAI/cvGDW1j31pZJu7bL6PWya
-        aws-secret-access-key: AKIAXQA7XSV5YYD4CVXS
+        aws-access-key-id: {{secrets.AWS_ACCESS_KEY}}
+        aws-secret-access-key: {{secrets.AWS_SECRET_ACCESS_KEY}}
         aws-region: ap-southeast-1
     # Let's install the dependencies our frontend application needs, on the Github Runner
     - name: Install dependencies
